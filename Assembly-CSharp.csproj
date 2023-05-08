@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\Scripts\PlayerFallToDeath.cs" />
      <Compile Include="Assets\Scripts\PlayerEscape.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
@@ -65,6 +66,7 @@
      <Compile Include="Assets\Scripts\TakeDamage Interface.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\GunInventory.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\BulletScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerDrownBehavior.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\PlayerMovementScript.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\Prefabs" />

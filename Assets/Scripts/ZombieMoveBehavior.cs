@@ -5,33 +5,59 @@ using UnityEngine.AI;
 
 public class ZombieMoveBehavior : MonoBehaviour
 {
-    [SerializeField]
-    [Tooltip("The time between two navigation path calculations, in seconds.")]
+    [SerializeField] [Tooltip("The time between two navigation path calculations, in seconds.")]
     private float navigationRefreshCycle = 0.5f;
 
-    private float currentMoveTime = 0;
+    [SerializeField] [Tooltip("The range within which the zombie will wander before seeing the player.")]
+    private float wanderRange = 10.0f;
+
+    private float _currentMoveTime = 0;
+    private Vector3? _lastPlayerPosition = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        agent.destination = GameObject.FindGameObjectWithTag("Player").transform.position;
+        _refreshDestination();
     }
 
     // Update is called once per frame
     void Update()
     {
-        currentMoveTime += Time.deltaTime;
+        _currentMoveTime += Time.deltaTime;
 
-        if (currentMoveTime > navigationRefreshCycle)
+        if (_currentMoveTime > navigationRefreshCycle)
         {
-            NavMeshAgent agent = GetComponent<NavMeshAgent>();
-            if (agent.enabled)
-            {
-                agent.SetDestination(GameObject.FindGameObjectWithTag("Player").transform.position);
-            }
+            _refreshDestination();
 
-            currentMoveTime = currentMoveTime - navigationRefreshCycle;
+            _currentMoveTime = _currentMoveTime - navigationRefreshCycle;
+        }
+    }
+
+    void _refreshDestination()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        NavMeshAgent agent = GetComponent<NavMeshAgent>();
+
+        if (Physics.Raycast(transform.position, (player.transform.position - transform.position).normalized,
+                out RaycastHit hit))
+        {
+            if (hit.collider.gameObject.CompareTag("Player"))
+            {
+                _lastPlayerPosition = player.transform.position;
+            }
+        }
+
+        if (_lastPlayerPosition.HasValue)
+        {
+            agent.destination = _lastPlayerPosition.Value;
+        }
+        else
+        {
+            agent.destination =
+                NavMesh.SamplePosition(transform.position + Random.insideUnitSphere * wanderRange,
+                    out NavMeshHit navMeshHit, 2 * wanderRange, NavMesh.AllAreas)
+                    ? navMeshHit.position
+                    : transform.position;
         }
     }
 }

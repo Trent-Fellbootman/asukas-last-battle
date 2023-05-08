@@ -12,6 +12,7 @@ TagManager:
   - Damageable
   - Enemy
   - EscapeSite
+  - Ocean
   layers:
   - Default
   - TransparentFX
