@@ -2,7 +2,9 @@ Logs/
 Library/
 Packages/
 Temp/
+Build/
 Assets/Easy FPS/
 Assets/Old Sea Port/
+Assets/TextMesh Pro/
 .vs/
 *.cache

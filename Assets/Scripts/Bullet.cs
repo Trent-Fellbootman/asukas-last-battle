@@ -27,17 +27,7 @@ public class Bullet : MonoBehaviour {
 
 		if(Physics.Raycast(transform.position, transform.forward,out hit, maxDistance, ~ignoreLayer)){
 			if(decalHitWall){
-				if(hit.transform.tag == "LevelPart"){
-					Instantiate(decalHitWall, hit.point + hit.normal * floatInfrontOfWall, Quaternion.LookRotation(hit.normal));
-					Destroy(gameObject);
-				}
-				if(hit.transform.tag == "Dummie"){
-					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
-					Destroy(gameObject);
-				}
-
-				Debug.Log(hit.transform.tag);
-                if (hit.transform.tag == "Damageable")
+                if (hit.transform.CompareTag("Enemy"))
                 {
 					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
 					hit.transform.GetComponent<TakeDamageInterface>().TakeDamage(damage);

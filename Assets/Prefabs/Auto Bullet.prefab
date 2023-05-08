@@ -89,4 +89,4 @@ MonoBehaviour:
   ignoreLayer:
     serializedVersion: 2
     m_Bits: 0
-  damage: 11
+  damage: 40

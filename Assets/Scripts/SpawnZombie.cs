@@ -12,30 +12,29 @@ public class SpawnZombie : MonoBehaviour
     [SerializeField]
     private int totalSpawnCount = 10;
 
-    private float currentTime;
+    private float _currentTime;
 
     // Start is called before the first frame update
     void Start()
     {
-        currentTime = Random.Range(0, spawnInterval);
+        _currentTime = Random.Range(0, spawnInterval);
     }
 
     // Update is called once per frame
     void Update()
     {
-        currentTime += Time.deltaTime;
+        _currentTime += Time.deltaTime;
 
-        if (currentTime >= spawnInterval && totalSpawnCount > 0)
+        if (_currentTime >= spawnInterval && totalSpawnCount > 0)
         {
-            currentTime = 0.0f;
-            spawnZombie();
+            _currentTime = 0.0f;
+            _spawnZombie();
             totalSpawnCount--;
         }
     }
 
-    private void spawnZombie() {
-        NavMeshHit hit;
-        if (NavMesh.SamplePosition(transform.position, out hit, 100.0f, NavMesh.AllAreas))
+    private void _spawnZombie() {
+        if (NavMesh.SamplePosition(transform.position, out var hit, 1.0f, NavMesh.AllAreas))
         {
             Instantiate(zombiePrefab, hit.position, Quaternion.identity);
         }
