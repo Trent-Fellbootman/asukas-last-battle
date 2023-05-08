@@ -7,7 +7,7 @@ public class ZombieMoveBehavior : MonoBehaviour
 {
     [SerializeField]
     [Tooltip("The time between two navigation path calculations, in seconds.")]
-    private readonly float navigationRefreshCycle = 1;
+    private float navigationRefreshCycle = 0.5f;
 
     private float currentMoveTime = 0;
 

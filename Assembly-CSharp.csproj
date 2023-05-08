@@ -70,6 +70,7 @@
     <Compile Include="Assets\Easy FPS\Scripts\GunScript.cs" />
     <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\GunShoot.cs" />
     <Compile Include="Assets\Easy FPS\Scripts\DestroyAfterTimeParticle.cs" />
+    <Compile Include="Assets\Scripts\SpawnZombie.cs" />
     <Compile Include="Assets\Scripts\ZombieMoveBehavior.cs" />
     <Compile Include="Assets\Scripts\TakeDamage Interface.cs" />
     <Compile Include="Assets\Easy FPS\Scripts\GunInventory.cs" />
