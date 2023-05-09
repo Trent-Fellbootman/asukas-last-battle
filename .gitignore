@@ -3,8 +3,9 @@ Library/
 Packages/
 Temp/
 Build/
-Assets/Easy FPS/
-Assets/Old Sea Port/
-Assets/TextMesh Pro/
+workspace/Assets/Easy FPS/
+workspace/Assets/Old Sea Port/
+workspace/Assets/TextMesh Pro/
+workspace/obj
 .vs/
 *.cache
