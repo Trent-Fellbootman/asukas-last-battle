@@ -9,3 +9,11 @@ workspace/Assets/TextMesh Pro/
 workspace/obj
 .vs/
 *.cache
+
+*.pdf
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.xdv

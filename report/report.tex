@@ -1,0 +1,147 @@
+\documentclass{article}
+
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\title{人工智能与游戏第二次作业}
+\author{人工智能2101 龚易明}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{简介}
+
+本次作业使用Unity设计搭建《逃离丧尸城》游戏。
+
+\subsection{游戏设计}
+
+《逃离丧尸城》是一个简单的FPS游戏，游戏中玩家被困在一个港口的高塔上，
+整个港口充斥着丧尸。玩家的目标就是从高塔移动到一艘小船处，逃离丧尸城。
+
+\subsection{游戏规则}
+
+游戏中，玩家共有两种武器，一种是突击步枪，一种是半自动步枪。
+使用突击步枪击杀一个丧尸需要3枪，使用半自动步枪需要1枪。
+玩家子弹有限，而丧尸较多，玩家需要尽可能节约子弹，并避免交火。
+
+玩家不会游泳，如果掉入水中，玩家会直接死亡。
+如果玩家从过高的地方跳下，也会摔死。
+为增强真实感，游戏还有以下设定：
+
+\begin{enumerate}
+    \item 玩家没有血量设定，只要被丧尸碰到就会被感染。
+    \item 游戏场景中没有任何弹药补给。
+    \item 丧尸移动速度很快（但还是比玩家稍慢）。
+    \item 丧尸具有一定智能，看到玩家之前会随机游走，但看到玩家之后就会直接追赶玩家，并且在看不到玩家时会尝试向玩家之前所在的位置移动。
+\end{enumerate}
+
+游戏截图如下：
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale=0.25]{res/screenshot.png}
+    \end{center}
+\end{figure}
+
+\section{开发过程}
+
+\subsection{免费资产导入}
+
+本次作业使用了Unity Asset Store中的一些免费资源，包括：
+
+\begin{enumerate}
+    \item Easy FPS：提供了FPS游戏角色，包括了动画、枪械、手部模型，以及移动、开火和切枪的脚本。
+    \item Old Sea Port：提供了丧尸城的场景模型。
+    \item Zombie：提供了丧尸的模型和骨骼动画。
+    \item TextMesh Pro（Unity自带）：提供了向UI添加文字的功能。
+\end{enumerate}
+
+\subsection{丧尸行为设计}
+
+这里编写非常简单的丧尸行为脚本。丧尸会尽可能向玩家移动，如果看不到玩家，就会向玩家之前所在的位置移动。
+
+丧尸的寻路（Pathfinding）使用Unity自带的Navmesh系统，这一系统提供了生成从一个点到另一个点的路径的功能。
+Unity寻路功能的实现使用了A*算法和避障算法。
+
+游戏中，玩家一直在移动，因此丧尸的移动路径应是一直更新的。由于A*算法的开销较大，
+这里为每个丧尸每隔0.5秒计算一次路径。若丧尸能看到玩家，则会记住玩家的位置，向这个位置移动；
+若丧尸看不到玩家，则会向玩家之前所在的位置移动。
+
+丧尸移动的脚本为Assets/Scripts/ZombieMoveBehavior.cs。
+
+\subsection{战斗系统}
+
+游戏中，玩家的子弹能对丧尸造成伤害。玩家开枪的脚本由Easy FPS提供，分析其源码后发现玩家每次开枪都会spawn一个bullet对象，
+这个对象并不可见，但会检测开枪的方向是否有碰撞体。这里修改了bullet的脚本，增加了判断碰撞体是否为丧尸的功能，
+如果为丧尸，就调用丧尸的TakeDamage方法对丧尸造成伤害。
+
+若丧尸血量低于0，就会死亡。丧尸死亡时会通知丧失的骨骼动画控制器，播放丧尸向后倒地的动画。
+
+与这一功能相关的脚本有Assets/Scripts/Bullet.cs,
+Assets/Scripts/TakeDamage Interface.cs,
+ZombieTakeDamage.cs。
+
+其中，Assets/Scripts/Bullet.cs为修改后的bullet脚本，其余脚本均为自行编写。
+
+\subsection{玩家死亡逻辑}
+
+游戏中，玩家死亡的可能原因有三种：被丧尸感染而死；掉入水中淹死；从过高的地方跳下摔死。
+
+负责被丧尸感染而死的脚本为Assets/Scripts/PlayerGetInfected.cs。
+这一脚本在碰撞检测时检测碰撞到的物体是否为丧尸，如果是丧尸，就激活玩家被感染的UI，
+并删除玩家游戏对象。
+
+负责掉入水中淹死的脚本为Assets/Scripts/PlayerDrownBehavior.cs。
+这一脚本在碰撞检测时检测碰撞到的物体是否为水，如果是水，就激活玩家淹死的UI，
+并删除玩家游戏对象。
+
+负责从过高的地方跳下摔死的脚本为Assets/Scripts/PlayerFallToDeath.cs。
+这一脚本在碰撞检测时检测玩家与碰撞体在垂直方向的相对速度，如果相对速度大于一个阈值，
+就激活玩家摔死的UI，并删除玩家游戏对象。
+
+\subsection{玩家逃离逻辑}
+
+游戏中，玩家需要从高塔上逃离，逃离的方式是到达一艘小船处。
+为判断玩家是否逃离成功，在小船处（小船所在的位置添加了一个粒子系统，产生狼烟的效果，这样玩家就知道小船在哪里了）
+设置碰撞体，如果玩家碰到这个碰撞体，就激活玩家逃离成功的UI。
+与这一功能相关的脚本为Assets/Scripts/PlayerEscape.cs。
+这一脚本在碰撞检测时检测碰撞到的物体是否为小船，如果是小船，就激活玩家逃离成功的UI，
+并删除玩家游戏对象。
+
+\subsection{丧尸诞生逻辑}
+
+游戏中设置了5个丧失点，每个丧尸点每隔5秒会刷出一个丧尸，丧尸点开始刷丧尸的时间为0-5之间的服从均匀分布的一个随机数。
+与刷丧尸功能相关的脚本为Assets/Scripts/SpawnZombie.cs。
+
+\subsection{Easy FPS玩家bug修复}
+
+Easy FPS提供的玩家脚本有一个bug，当玩家切换枪械时，枪械的子弹数量会恢复成初始值
+（相当于一种作弊器，只要切枪就可以回满子弹）。分析Easy FPS源码后发现，
+玩家在切换枪械时会删除当前枪械，并重新生成一把新枪，这就是枪械子弹数复位的原因。
+为修复这一bug，更改Easy FPS源码，玩家每次切枪时，若要切换到的枪械没有被生成过，
+则生成新枪，但若要切换到的枪械已经被生成过，则直接激活并切换到这把枪。
+此外，切枪时不会删除原有枪械，而是将原有枪械设为"disabled"
+（Unity中disabled的游戏对象不会被更新，对游戏世界也没有作用）。
+这样，枪械就可以保留子弹数目的信息了。
+
+\subsection{UI设计}
+
+这里设计非常简单的UI。游戏的左上角有一个提示信息，提示信息告诉玩家如何显示帮助界面；
+玩家按下对应按键时，帮助界面会显示在屏幕上，提示玩家如何操作。
+玩家被感染、被淹死、摔死、逃离成功时，会显示相应的UI，告诉玩家游戏结束。
+玩家可以重启或退出游戏。
+
+与UI相关的脚本是Assets/Scripts/Manager.cs。
+
+以上自行编写的代码约300行。
+
+\subsection{总结}
+
+本次作业使用Unity搭建了一个简单的《逃离丧尸城》游戏平台。
+
+\end{document}
