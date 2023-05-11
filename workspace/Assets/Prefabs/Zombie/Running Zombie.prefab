@@ -103,12 +103,12 @@ NavMeshAgent:
   m_GameObject: {fileID: 5847172406612271960}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.25
+  m_Radius: 0.5
   m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 720
+  m_StoppingDistance: 0.8
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -128,7 +128,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e05a5bdd7ab674143a62863a8861bfa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navigationRefreshCycle: 0.5
+  navigationRefreshCooldown: 0.1
+  wanderRange: 10
+  attackCooldown: 1
+  attackEnterDistance: 1
+  attackExitDistance: 1.5
+  attackDamage: 50
+  attackDamageDelay: 0.5
 --- !u!114 &1316967654
 MonoBehaviour:
   m_ObjectHideFlags: 0

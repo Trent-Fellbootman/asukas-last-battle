@@ -21,10 +21,10 @@ public class PlayerGetInfected : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            infected.SetActive(true);
-            Destroy(gameObject);
-        }
+        // if (other.gameObject.CompareTag("Enemy"))
+        // {
+        //     infected.SetActive(true);
+        //     Destroy(gameObject);
+        // }
     }
 }
