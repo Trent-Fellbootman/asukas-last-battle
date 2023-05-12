@@ -17,7 +17,9 @@ public class ZombieController : MonoBehaviour
     [SerializeField] [Tooltip("Minimum time between two consecutive attacks.")]
     private float attackCooldown = 1.0f;
 
-    [FormerlySerializedAs("attackRange")] [SerializeField] [Tooltip("The range within which the zombie can attack the player.")]
+    [FormerlySerializedAs("attackRange")]
+    [SerializeField]
+    [Tooltip("The range within which the zombie can attack the player.")]
     private float attackEnterDistance = 1.0f;
 
     [SerializeField]
@@ -26,9 +28,12 @@ public class ZombieController : MonoBehaviour
 
     [SerializeField] [Tooltip("The damage dealt to the player when attacked.")]
     private float attackDamage = 10.0f;
-    
+
     [SerializeField] [Tooltip("The time from the start of an attack to the actual damage.")]
     private float attackDamageDelay = 0.5f;
+
+    [SerializeField] [Tooltip("The height of the head above the origin.")]
+    private float headOffset = 0.9f;
 
     private float currentDestinationRefreshCooldown = 0;
     private Vector3? lastPlayerPosition = null;
@@ -70,15 +75,15 @@ public class ZombieController : MonoBehaviour
         }
 
         var playerDistance = playerOffset.magnitude;
-        
+
         if (playerDistance < attackEnterDistance)
         {
             enteredAttackRange = true;
-            
+            animator.SetTrigger(Attack);
+
             // player in range, perform attack
             navMeshAgent.isStopped = true;
-            navMeshAgent.velocity = Vector3.zero;
-            
+
             // look at the player while still standing upright
             var lookAtPosition = player.transform.position;
             lookAtPosition.y = transform.position.y;
@@ -90,7 +95,6 @@ public class ZombieController : MonoBehaviour
             }
             else
             {
-                // turn to player
                 animator.SetTrigger(Attack);
 
                 Invoke(nameof(TryDamagePlayer), attackDamageDelay);
@@ -104,7 +108,7 @@ public class ZombieController : MonoBehaviour
             if (playerDistance > attackExitDistance || !enteredAttackRange)
             {
                 enteredAttackRange = false;
-                
+
                 navMeshAgent.isStopped = false;
                 animator.SetTrigger(AttackToRun);
                 currentDestinationRefreshCooldown -= Time.deltaTime;
@@ -128,7 +132,7 @@ public class ZombieController : MonoBehaviour
         }
 
         var playerDistance = playerOffset.magnitude;
-        
+
         if (playerDistance < attackExitDistance)
         {
             player.GetComponent<TakeDamageInterface>().TakeDamage(attackDamage);
@@ -137,7 +141,8 @@ public class ZombieController : MonoBehaviour
 
     void _refreshDestination()
     {
-        if (Physics.Raycast(transform.position, (player.transform.position - transform.position).normalized,
+        if (Physics.Raycast(transform.position + new Vector3(0, headOffset, 0),
+                (player.transform.position - transform.position).normalized,
                 out RaycastHit hit))
         {
             if (hit.collider.gameObject.CompareTag("Player"))

@@ -12,6 +12,11 @@ public class SpawnZombie : MonoBehaviour
     [SerializeField]
     private int totalSpawnCount = 10;
 
+    public int remainingEnemies
+    {
+        get => totalSpawnCount;
+    }
+
     private float _currentTime;
 
     // Start is called before the first frame update

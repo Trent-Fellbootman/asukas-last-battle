@@ -6,6 +6,13 @@ public class ZombieTakeDamage : MonoBehaviour, TakeDamageInterface
     [SerializeField]
     private float health = 100.0f;
 
+    [SerializeField] private GameObject halo;
+
+    public float currentHealth
+    {
+        get => health;
+    }
+
     private Animator animator;
     private NavMeshAgent agent;
     private CapsuleCollider capsuleCollider;
@@ -47,5 +54,6 @@ public class ZombieTakeDamage : MonoBehaviour, TakeDamageInterface
         agent.enabled = false;
         zombieController.enabled = false;
         capsuleCollider.enabled = false;
+        halo.SetActive(false);
     }
 }
