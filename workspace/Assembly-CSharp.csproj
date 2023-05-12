@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\Assembly-CSharp\</OutputPath>
-    <DefineConstants>UNITY_2022_2_2;UNITY_2022_2;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_2_2;UNITY_2022_2;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -47,129 +47,295 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\EvaVictoryLogic.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
-     <Compile Include="Assets\Scripts\PlayerFallToDeath.cs" />
-     <Compile Include="Assets\Scripts\PlayerEscape.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
-     <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\MouseLookScript.cs" />
      <Compile Include="Assets\Scripts\Manager.cs" />
-     <Compile Include="Assets\Scripts\PlayerTakeDamage.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\ZombieController.cs" />
-     <Compile Include="Assets\Scripts\ZombieTakeDamage.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\GunAim.cs" />
-     <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
-     <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\GunScript.cs" />
      <Compile Include="Assets\Scripts\PlayerGetInfected.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\GunShoot.cs" />
-     <Compile Include="Assets\Easy FPS\Scripts\DestroyAfterTimeParticle.cs" />
      <Compile Include="Assets\Scripts\SpawnZombie.cs" />
      <Compile Include="Assets\Scripts\TakeDamage Interface.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\GunInventory.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\BulletScript.cs" />
-     <Compile Include="Assets\Scripts\PlayerDrownBehavior.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\PlayerMovementScript.cs" />
+     <Compile Include="Assets\Simple Water Shader HDRP\Scripts\DemoButtons.cs" />
+     <Compile Include="Assets\Scripts\PlayerFallToDeath.cs" />
+     <Compile Include="Assets\Scripts\PlayerEscape.cs" />
+     <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\TerrainDemoScene_HDRP\Scripts\SceneAnnotation.cs" />
+     <Compile Include="Assets\Scripts\PlayerTakeDamage.cs" />
+     <Compile Include="Assets\Scripts\ZombieTakeDamage.cs" />
+     <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
+     <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\Easy FPS\Scripts\DestroyAfterTimeParticle.cs" />
+     <Compile Include="Assets\TerrainDemoScene_HDRP\Scripts\TerrainTreeToggle.cs" />
+     <Compile Include="Assets\Scripts\PlayerDrownBehavior.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Concrete_B" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Volumes" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\Stamps.txt" />
+     <None Include="Assets\TerrainDemoScene_HDRP\ThirdPartyNotices.txt" />
+     <Folder Include="Assets\Simple Water Shader HDRP\Scripts" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\Prefabs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\FadeDistances.txt" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\LensFlares\Textures" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Settings\HDRP" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Scenes\TerrainDemoScene" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\ImportingMaps.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\Easy FPS\MuzzelFlash\MuzzlePrefabs" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\DiffusionProfiles.txt" />
      <Folder Include="Assets\TextMesh Pro\Sprites" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Foliage\Red_Bush\Textures" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_B" />
      <Folder Include="Assets\Old Sea Port\scenes" />
+     <Folder Include="Assets\JapaneseSchool\Meshes" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Grass_B" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Textures\Rock_Overgrown_A" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\ShaderGraphs" />
      <Folder Include="Assets\Old Sea Port\prefabs\Materials" />
      <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\Materials" />
+     <Folder Include="Assets\Generators" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Water\Textures" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Foliage" />
+     <Folder Include="Assets\Materials" />
+     <Folder Include="Assets\JapaneseSchool" />
      <Folder Include="Assets\Scenes" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Skybox\Models" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Materials" />
      <Folder Include="Assets\Easy FPS\Resources" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Settings\DiffusionProfiles" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Details\Textures" />
+     <Folder Include="Assets\JapaneseSchool\Profiles" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Foliage\Red_Bush" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Terrain" />
      <Folder Include="Assets\Zombie\Prefabs" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Water\Materials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Scenes" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Water" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared" />
      <Folder Include="Assets\Easy FPS\Images" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Floor_A" />
      <Folder Include="Assets\Old Sea Port\Skyboxes\Textures" />
      <Folder Include="Assets\Old Sea Port" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_B\Textures" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Grass_Soil_A" />
      <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Scripts" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Grass_A" />
+     <Folder Include="Assets\JapaneseSchool\Textures" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\Textures" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Grass_Moss_A" />
      <Folder Include="Assets\Zombie\Animations" />
      <Folder Include="Assets\Easy FPS\Model_Animations_Textures\main character" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Conifer" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks" />
      <Folder Include="Assets\Models" />
      <Folder Include="Assets\TextMesh Pro\Resources" />
+     <Folder Include="Assets\JapaneseSchool\Textures\ChairDesk_A" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Scripts\Resources\SceneAnnotation.uxml" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Heather_A" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Lake" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Cypress" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\Animation" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Textures\Cliff_Mossy_A" />
      <Folder Include="Assets\Easy FPS" />
+     <Folder Include="Assets\JapaneseSchool\Meshes\Combined" />
      <Folder Include="Assets\Old Sea Port\scenes\Dock Thing" />
+     <Folder Include="Assets\Generators\MonotonicTextureGenerator" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Conifer\Textures" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Lighting" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\VFXGraphs" />
+     <Folder Include="Assets\JapaneseSchool\Shader" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\Layers.txt" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\FireExplosionEffects\Textures" />
      <Folder Include="Assets\Old Sea Port\Skyboxes" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Textures" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\FireExplosionEffects\Materials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\LensFlares\LensFlarePresets" />
      <Folder Include="Assets\TextMesh Pro" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Brushes" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Skybox" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Notes" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Bookmarks" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Cypress\Materials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees" />
+     <Folder Include="Assets\JapaneseSchool\Materials" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\Animation\Controllers" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Textures\Rock_Overgrown_I" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Drywall_A" />
      <Folder Include="Assets\Easy FPS\Model_Animations_Textures\ironSight_addon" />
      <Folder Include="Assets\Easy FPS\MuzzelFlash\Textures" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Brushes\Heightmaps\_New" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Materials" />
      <Folder Include="Assets\Prefabs" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\Fonts" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\UI" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_C\Textures" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\Welcome.txt" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Textures\Rock_Overgrown_C" />
      <Folder Include="Assets\Zombie\Materials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Black_Sand_Rocks_B" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_A\Textures" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_C" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\Animation\Animations" />
+     <Folder Include="Assets\Scenes\AsukaEscape" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Volumes" />
+     <Folder Include="Assets\Simple Water Shader HDRP\Materials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Textures\Stone_A" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Settings" />
      <Folder Include="Assets\Zombie" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Grass_A" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <Folder Include="Assets\Easy FPS\Sounds" />
      <Folder Include="Assets\Old Sea Port\Shaders" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Textures\Rock_Overgrown_B" />
      <Folder Include="Assets\Easy FPS\MuzzelFlash" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <Folder Include="Assets\Old Sea Port\prefabs" />
      <Folder Include="Assets\Easy FPS\Prefabs" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Palettes" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Assets\Old Sea Port\Materials" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\Reflections.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <Folder Include="Assets\JapaneseSchool\Prefabs" />
      <Folder Include="Assets\Easy FPS\Sounds\playerSound" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Shots" />
      <None Include="Assets\Old Sea Port\Shaders\MFEP_Stream.shader" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Cypress\Textures" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Animation" />
+     <Folder Include="Assets\JapaneseSchool\Scenes" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_B\Materials" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <Folder Include="Assets\Old Sea Port\mesh\Materials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_D" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Scripts\Resources\SceneAnnotationUI.uss" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Volumes\Shots" />
      <Folder Include="Assets\Easy FPS\Images\Materials" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Settings\Lighting" />
      <Folder Include="Assets\TextMesh Pro\Shaders" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\DenseDetails.txt" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\VFXGraphs\Art\MagicLamp" />
      <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
      <Folder Include="Assets\Easy FPS\Scripts" />
      <Folder Include="Assets\TextMesh Pro\Fonts" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Concrete_A" />
      <Folder Include="Assets\Easy FPS\Model_Animations_Textures\main character\Textures" />
+     <Folder Include="Assets\HDRPDefaultResources" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\ProxyTerrain.txt" />
+     <Folder Include="Assets\Scenes\School" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Conifer\Materials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Skybox\Textures" />
+     <Folder Include="Assets\Simple Water Shader HDRP\Shaders" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_C\Materials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Textures\Cliff_Mossy_B" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Cliff_Mossy_E" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\LocalFog" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_D\Textures" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Plants_A" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Details" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Data" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\PhysicsMaterials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Volumes\Screenshots" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Models" />
      <Folder Include="Assets\Scenes\Old Port" />
+     <Folder Include="Assets\JapaneseSchool\Prefabs\Reflection Probes" />
      <Folder Include="Assets\Easy FPS\Model_Animations_Textures\ironSight_addon\Materials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\VFXGraphs\Art\Desert" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain" />
+     <Folder Include="Assets\Simple Water Shader HDRP\Prefabs" />
      <Folder Include="Assets\Old Sea Port\Water" />
      <Folder Include="Assets\Old Sea Port\Skyboxes\Textures\Eerie" />
      <Folder Include="Assets\Zombie\Textures" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines" />
      <Folder Include="Assets\Old Sea Port\EffectExamples" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Details\Models" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\FireExplosionEffects" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Brushes\Heightmaps" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Brick_B" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets\Old Sea Port\scenes\Dock Thing_Profiles" />
+     <None Include="Assets\TextMesh Pro\Fonts\License.txt" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_D\Materials" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\Tiles.txt" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Foliage\Red_Bush\Models" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Tidal_Pools_B" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\VFXGraphs\Art" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Rock_Jagged_B" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\LensFlares" />
+     <Folder Include="Assets\JapaneseSchool\Scenes\Demo" />
      <Folder Include="Assets\Easy FPS\Model_Animations_Textures" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Brick_A" />
+     <Folder Include="Assets\JapaneseSchool\Textures\HDR" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Brick_C" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Layers" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\Sprites" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\SkyboxAssets.txt" />
      <Folder Include="Assets\Old Sea Port\mesh" />
      <Folder Include="Assets\Old Sea Port\mesh\brick_tree_base.fbm" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Leaves_A" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\WaterShader.txt" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Pebbles_B" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Black_Sand_A" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Bark_A" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\ShaderGraphs\SubGraphs" />
      <None Include="Assets\Old Sea Port\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_A\Materials" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\SpeedTrees.txt" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Old Sea Port\textures" />
      <Folder Include="Assets\TextMesh Pro\Documentation" />
+     <Folder Include="Assets\Simple Water Shader HDRP\DemoScene" />
      <Folder Include="Assets\Easy FPS\Resources\Weap_Icons" />
+     <Folder Include="Assets\Simple Water Shader HDRP" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Shared\Shaders" />
      <Folder Include="Assets\Easy FPS\MuzzelFlash\Materials" />
+     <Folder Include="Assets\JapaneseSchool\Textures\Metal_A" />
+     <Folder Include="Assets\JapaneseSchool\Textures\NormalTrim_A" />
      <Folder Include="Assets\Easy FPS\Model_Animations_Textures\main character\Materials" />
      <Folder Include="Assets\Zombie\FBXs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Details\Materials" />
+     <Folder Include="Assets\JapaneseSchool\Volumes" />
+     <Folder Include="Assets\Simple Water Shader HDRP\Meshs" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\VFXGraphs\Art\Meshes" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_A" />
+     <Folder Include="Assets\JapaneseSchool\Packages" />
      <Folder Include="Assets\Prefabs\Enemies" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\UI\Sprites" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Profiles" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Settings\Noise" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Skybox\Materials" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Screenshots" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Scripts\Resources" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\FireExplosionEffects\Prefabs" />
+     <Folder Include="Assets\Simple Water Shader HDRP\Textures" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\TerrainDemoScene_HDRP\Notes\ProceduralSkies.txt" />
+     <Folder Include="Assets\TerrainDemoScene_HDRP\Scripts\Icons" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.2.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -247,6 +413,9 @@
      </Reference>
      <Reference Include="UnityEngine.LocalizationModule">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.2.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.NVIDIAModule">
+     <HintPath>C:\Program Files\Unity\Hub\Editor\2022.2.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.NVIDIAModule.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.ParticleSystemModule">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.2.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
@@ -419,14 +588,26 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.2.2f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Burst.Cecil.Pdb">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+     </Reference>
      <Reference Include="ReportGeneratorMerged">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Mdb">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Newtonsoft.Json">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Rocks">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.2.2f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -794,14 +975,86 @@
      <Reference Include="System.Xml.Serialization">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.2.2f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+     <Reference Include="Unity.VisualEffectGraph.Runtime">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.Runtime">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="com.unity.cinemachine.editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AI.Navigation">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Burst.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Core">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Rider.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualEffectGraph.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Flow">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Core.Environments">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Core.Analytics">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VSCode.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.HighDefinition.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.RenderPipelines.HighDefinition.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.EditorCoroutines.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TerrainTools.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TerrainTools.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -809,11 +1062,14 @@
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.TerrainTools">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ShaderGraph.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Services.Core">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -824,14 +1080,8 @@
      <Reference Include="Unity.VisualScripting.Core.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Rider.Editor">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
@@ -839,20 +1089,11 @@
      <Reference Include="Unity.Timeline">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Services.Core.Environments">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+     <Reference Include="Unity.InputSystem">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
@@ -863,14 +1104,14 @@
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TextMeshPro">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <Reference Include="Unity.Mathematics">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Services.Core.Analytics">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+     <Reference Include="Unity.Searcher.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AI.Navigation.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
@@ -878,11 +1119,11 @@
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+     <Reference Include="Cinemachine">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VSCode.Editor">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

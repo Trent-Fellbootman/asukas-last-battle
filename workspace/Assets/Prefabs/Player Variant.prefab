@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 173116, guid: c391f12a928274acab8576bb6030641d, type: 3}
       propertyPath: m_Name
-      value: Player Variant
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 431846, guid: c391f12a928274acab8576bb6030641d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: gunsIHave.Array.data[1]
       value: SemiAutoGun
       objectReference: {fileID: 0}
+    - target: {fileID: 11415148, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: maxSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415148, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: jumpForce
+      value: 30000
+      objectReference: {fileID: 0}
     - target: {fileID: 13695512, guid: c391f12a928274acab8576bb6030641d, type: 3}
       propertyPath: m_Height
       value: 1.8
@@ -80,22 +88,15 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 2d1b92c8292f3234baa92e29f307a81d, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2306104, guid: c391f12a928274acab8576bb6030641d, type: 3}
+    - {fileID: 3382226, guid: c391f12a928274acab8576bb6030641d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 173116, guid: c391f12a928274acab8576bb6030641d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1642538507}
-    - targetCorrespondingSourceObject: {fileID: 173116, guid: c391f12a928274acab8576bb6030641d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1642538506}
-    - targetCorrespondingSourceObject: {fileID: 173116, guid: c391f12a928274acab8576bb6030641d, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1642538517}
-    - targetCorrespondingSourceObject: {fileID: 173116, guid: c391f12a928274acab8576bb6030641d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1642538516}
     - targetCorrespondingSourceObject: {fileID: 173116, guid: c391f12a928274acab8576bb6030641d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1642538526}
@@ -105,32 +106,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 173116, guid: c391f12a928274acab8576bb6030641d, type: 3}
   m_PrefabInstance: {fileID: 7118232051388421013}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1642538507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7118232051388266409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edf6dcd7b1ee1654c91ffe453a5423b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  victory: {fileID: 0}
---- !u!114 &1642538506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7118232051388266409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deb6cd74d76fab146a062ae93a4b4b18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  infected: {fileID: 0}
 --- !u!114 &1642538517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,20 +119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drownUI: {fileID: 0}
---- !u!114 &1642538516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7118232051388266409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e6e315feb6e0f4aa6bf18ba582e0d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallToDeathUI: {fileID: 0}
-  fallToDeathVelocityThreshold: 10
 --- !u!114 &1642538526
 MonoBehaviour:
   m_ObjectHideFlags: 0

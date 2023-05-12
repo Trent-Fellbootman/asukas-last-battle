@@ -8,8 +8,13 @@ using Random = UnityEngine.Random;
 
 public class ZombieController : MonoBehaviour
 {
-    [SerializeField] [Tooltip("The time between two navigation path calculations, in seconds.")]
-    private float navigationRefreshCooldown = 0.1f;
+    [FormerlySerializedAs("navigationRefreshCooldown")]
+    [SerializeField]
+    [Tooltip(
+        "The navigation refresh factor. If set to 1, " +
+        "the zombie will refresh its navigation every 1s when it is one unit away from the player. " +
+        "The amount of time between two path updates is proportional to the distance from the player.")]
+    private float navigationRefreshRate = 0.1f;
 
     [SerializeField] [Tooltip("The range within which the zombie will wander before seeing the player.")]
     private float wanderRange = 10.0f;
@@ -35,7 +40,7 @@ public class ZombieController : MonoBehaviour
     [SerializeField] [Tooltip("The height of the head above the origin.")]
     private float headOffset = 0.9f;
 
-    private float currentDestinationRefreshCooldown = 0;
+    private float timeSinceLastPathCalculation = 0;
     private Vector3? lastPlayerPosition = null;
     private float currentAttackCooldown = 0;
 
@@ -68,6 +73,16 @@ public class ZombieController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Physics.Raycast(transform.position + new Vector3(0, headOffset, 0),
+                (player.transform.position - transform.position).normalized,
+                out RaycastHit hit))
+        {
+            if (hit.collider.gameObject.CompareTag("Player"))
+            {
+                lastPlayerPosition = player.transform.position;
+            }
+        }
+        
         var playerOffset = player.transform.position - transform.position;
         if (Mathf.Abs(playerOffset.y) < 1.8f)
         {
@@ -100,7 +115,7 @@ public class ZombieController : MonoBehaviour
                 Invoke(nameof(TryDamagePlayer), attackDamageDelay);
                 currentAttackCooldown += attackCooldown;
 
-                currentDestinationRefreshCooldown = 0;
+                timeSinceLastPathCalculation = 1e5f;
             }
         }
         else
@@ -108,19 +123,29 @@ public class ZombieController : MonoBehaviour
             if (playerDistance > attackExitDistance || !enteredAttackRange)
             {
                 enteredAttackRange = false;
-
+                
                 navMeshAgent.isStopped = false;
                 animator.SetTrigger(AttackToRun);
-                currentDestinationRefreshCooldown -= Time.deltaTime;
+                timeSinceLastPathCalculation += Time.deltaTime;
 
-                if (currentDestinationRefreshCooldown <= 0)
+                if (timeSinceLastPathCalculation >= _calculatePathCooldown() || _destinationReached())
                 {
                     _refreshDestination();
 
-                    currentDestinationRefreshCooldown += navigationRefreshCooldown;
+                    timeSinceLastPathCalculation = 0;
                 }
             }
         }
+    }
+
+    private bool _destinationReached()
+    {
+        return (navMeshAgent.destination - transform.position).magnitude <= navMeshAgent.stoppingDistance + 1e-3;
+    }
+
+    private float _calculatePathCooldown()
+    {
+        return (player.transform.position - transform.position).magnitude * navigationRefreshRate;
     }
 
     private void TryDamagePlayer()
@@ -141,16 +166,6 @@ public class ZombieController : MonoBehaviour
 
     void _refreshDestination()
     {
-        if (Physics.Raycast(transform.position + new Vector3(0, headOffset, 0),
-                (player.transform.position - transform.position).normalized,
-                out RaycastHit hit))
-        {
-            if (hit.collider.gameObject.CompareTag("Player"))
-            {
-                lastPlayerPosition = player.transform.position;
-            }
-        }
-
         if (lastPlayerPosition.HasValue)
         {
             navMeshAgent.SetDestination(lastPlayerPosition.Value);
