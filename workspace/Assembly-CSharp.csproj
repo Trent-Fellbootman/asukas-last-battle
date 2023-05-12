@@ -152,6 +152,8 @@
      <Folder Include="Assets\Easy FPS" />
      <Folder Include="Assets\JapaneseSchool\Meshes\Combined" />
      <Folder Include="Assets\Old Sea Port\scenes\Dock Thing" />
+     <Folder Include="Packages\com.unity.render-pipelines.high-definition-config\Tests" />
+     <Folder Include="Packages\com.unity.render-pipelines.high-definition-config" />
      <Folder Include="Assets\Generators\MonotonicTextureGenerator" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Conifer\Textures" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -333,6 +335,7 @@
      <Folder Include="Assets\TerrainDemoScene_HDRP\Scripts\Resources" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\FireExplosionEffects\Prefabs" />
      <Folder Include="Assets\Simple Water Shader HDRP\Textures" />
+     <None Include="Packages\com.unity.render-pipelines.high-definition-config\package.json" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TerrainDemoScene_HDRP\Notes\ProceduralSkies.txt" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Scripts\Icons" />
@@ -1014,9 +1017,6 @@
      <Reference Include="Unity.Services.Core.Environments">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
@@ -1127,6 +1127,10 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime.csproj">
+      <Project>{72442795-8ad0-c028-9309-e370d6c2c8c0}</Project>
+      <Name>Unity.RenderPipelines.HighDefinition.Config.Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
