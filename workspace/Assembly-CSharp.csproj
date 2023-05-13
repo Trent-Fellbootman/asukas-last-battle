@@ -292,6 +292,7 @@
      <Folder Include="Assets\JapaneseSchool\Textures\Brick_B" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets\Old Sea Port\scenes\Dock Thing_Profiles" />
+     <Folder Include="Assets\Scenes\Harbor" />
      <None Include="Assets\TextMesh Pro\Fonts\License.txt" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_D\Materials" />
      <None Include="Assets\TerrainDemoScene_HDRP\Notes\Tiles.txt" />

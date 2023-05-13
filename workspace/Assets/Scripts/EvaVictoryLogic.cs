@@ -7,8 +7,10 @@ public class EvaVictoryLogic : MonoBehaviour
 {
     [SerializeField] private GameObject victoryUI;
     [SerializeField] private GameObject[] enemySpawnerObjects;
-    
+
     private SpawnZombie[] enemySpawners;
+
+    private bool conditionReached = false;
 
     private void Awake()
     {
@@ -22,47 +24,51 @@ public class EvaVictoryLogic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        bool victory = true;
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-
-        if (player)
+        if (!conditionReached)
         {
-            foreach (var enemySpawner in enemySpawners)
+            bool victory = true;
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+            if (player)
             {
-                if (enemySpawner.remainingEnemies > 0)
+                foreach (var enemySpawner in enemySpawners)
                 {
-                    victory = false;
-                    break;
+                    if (enemySpawner.remainingEnemies > 0)
+                    {
+                        victory = false;
+                        break;
+                    }
                 }
             }
-        }
-        else
-        {
-            victory = false;
-        }
-
-        if (victory)
-        {
-            foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+            else
             {
-                if (enemy.GetComponent<ZombieTakeDamage>().currentHealth > 0)
+                victory = false;
+            }
+
+            if (victory)
+            {
+                foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Enemy"))
                 {
-                    victory = false;
-                    break;
+                    if (enemy.GetComponent<ZombieTakeDamage>().currentHealth > 0)
+                    {
+                        victory = false;
+                        break;
+                    }
                 }
             }
-        }
 
-        if (victory)
-        {
-            victoryUI.SetActive(true);
-            Time.timeScale = 0;
+            if (victory)
+            {
+                victoryUI.SetActive(true);
+                Time.timeScale = 0;
+
+                conditionReached = true;
+            }
         }
     }
 }
