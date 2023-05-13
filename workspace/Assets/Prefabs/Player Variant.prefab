@@ -96,6 +96,34 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 2d1b92c8292f3234baa92e29f307a81d, type: 2}
+    - target: {fileID: 82006501625295052, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82072754584320168, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82102465769777700, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82190838427811640, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82190838427811640, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82784591334345954, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82987821035134148, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2306104, guid: c391f12a928274acab8576bb6030641d, type: 3}
     - {fileID: 3382226, guid: c391f12a928274acab8576bb6030641d, type: 3}

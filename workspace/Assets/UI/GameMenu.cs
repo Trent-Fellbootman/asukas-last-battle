@@ -22,6 +22,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] private GameObject player;
 
     [SerializeField] private GameObject[] hudGameObjects;
+    [SerializeField] private string mainMenuSceneName;
 
     private DropdownField videoQualitySelector;
     private DropdownField difficultyLevelSelector;
@@ -148,7 +149,7 @@ public class GameMenu : MonoBehaviour
 
     private void _quitToMainMenu()
     {
-        // TODO
+        SceneManager.LoadScene(mainMenuSceneName);
     }
 
     private void _quitGame()
