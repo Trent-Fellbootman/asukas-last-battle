@@ -34,7 +34,7 @@ public class PlayerTakeDamage : MonoBehaviour, TakeDamageInterface
         {
             healthBar.health = 0;
             playerDeadUI.SetActive(true);
-            Destroy(gameObject);
+            Time.timeScale = 0;
         }
     }
 }

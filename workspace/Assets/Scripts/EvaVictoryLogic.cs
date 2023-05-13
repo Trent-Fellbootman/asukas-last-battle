@@ -61,8 +61,8 @@ public class EvaVictoryLogic : MonoBehaviour
 
         if (victory)
         {
-            Destroy(player);
             victoryUI.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }

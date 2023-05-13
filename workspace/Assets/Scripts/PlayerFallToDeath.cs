@@ -26,8 +26,8 @@ public class PlayerFallToDeath : MonoBehaviour
     {
         if (Mathf.Abs(other.relativeVelocity.y) > fallToDeathVelocityThreshold)
         {
-                fallToDeathUI.SetActive(true);
-                Destroy(gameObject);
+            fallToDeathUI.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }

@@ -1,0 +1,60 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: initial; background-color: rgba(0, 0, 0, 0); align-self: center; justify-content: center; align-items: stretch; height: auto; flex-shrink: initial; flex-basis: 100%; flex-direction: column; opacity: 1; visibility: visible; display: flex; font-size: 32px;">
+        <ui:ScrollView style="min-height: 300px; width: 750px; height: 500px;">
+            <ui:VisualElement style="flex-grow: initial; background-color: rgba(255, 255, 255, 0.5); justify-content: flex-start; flex-basis: auto; flex-shrink: initial; align-self: auto; border-left-width: 10px; border-right-width: 10px; border-top-width: 10px; border-bottom-width: 10px; border-left-color: rgba(255, 0, 0, 0); border-right-color: rgba(255, 0, 0, 0); border-top-color: rgba(255, 0, 0, 0); border-bottom-color: rgba(255, 0, 0, 0); font-size: 24px; max-width: none; padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px;">
+                <ui:VisualElement name="Background" style="flex-grow: initial; background-color: rgba(0, 0, 0, 0); flex-shrink: initial;">
+                    <ui:Label tabindex="-1" text="Background" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; font-size: 32px;" />
+                    <ui:Label tabindex="-1" text="You, Asuka (in EVA-2), is wanted by EVA mass produced prototypes. Defeat them all!" display-tooltip-when-elided="true" style="white-space: normal;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="SettingsPane" style="flex-grow: initial; background-color: rgba(0, 0, 0, 0); flex-shrink: initial;">
+                    <ui:Label tabindex="-1" text="Settings" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; font-size: 32px;" />
+                    <ui:VisualElement style="flex-grow: initial; background-color: rgba(0, 0, 0, 0); flex-direction: column; flex-shrink: initial; max-width: none; max-height: none; align-self: center;">
+                        <ui:DropdownField label="Video Quality" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="VideoQualitySelector" style="min-width: 300px; flex-shrink: initial; flex-grow: initial; flex-direction: row; font-size: 24px; -unity-text-align: upper-center; margin-top: 4px; margin-bottom: 8px; justify-content: flex-start; align-items: stretch; max-height: none;" />
+                        <ui:DropdownField label="Difficulty" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="DifficultyLevelSelector" style="min-width: 300px; flex-shrink: initial; flex-grow: initial; justify-content: flex-start; font-size: 24px; -unity-text-align: upper-center; margin-top: 4px; margin-bottom: 8px; flex-direction: row; max-height: none;" />
+                        <ui:Toggle label="Show FPS" name="FPSToggle" style="align-self: stretch; -unity-text-align: upper-center;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Controls" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                    <ui:Label tabindex="-1" text="Controls" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; font-size: 32px;" />
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: auto; width: auto; justify-content: space-around;">
+                        <ui:Label tabindex="-1" text="Move" display-tooltip-when-elided="true" name="Move" style="width: 100px; -unity-text-align: upper-center;" />
+                        <ui:Label tabindex="-1" text="W/A/S/D" display-tooltip-when-elided="true" style="width: 100px; -unity-text-align: upper-center;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: auto; width: auto; justify-content: space-around;">
+                        <ui:Label tabindex="-1" text="Sprint" display-tooltip-when-elided="true" name="Move" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                        <ui:Label tabindex="-1" text="Left Shift" display-tooltip-when-elided="true" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: auto; width: auto; justify-content: space-around;">
+                        <ui:Label tabindex="-1" text="Jump" display-tooltip-when-elided="true" name="Move" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                        <ui:Label tabindex="-1" text="Space" display-tooltip-when-elided="true" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: auto; width: auto; justify-content: space-around;">
+                        <ui:Label tabindex="-1" text="Crouch" display-tooltip-when-elided="true" name="Move" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                        <ui:Label tabindex="-1" text="C" display-tooltip-when-elided="true" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: auto; width: auto; justify-content: space-around;">
+                        <ui:Label tabindex="-1" text="Shoot" display-tooltip-when-elided="true" name="Move" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                        <ui:Label tabindex="-1" text="Left Mouse Button" display-tooltip-when-elided="true" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: auto; width: auto; justify-content: space-around;">
+                        <ui:Label tabindex="-1" text="Aim" display-tooltip-when-elided="true" name="Move" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                        <ui:Label tabindex="-1" text="Right Mouse Button" display-tooltip-when-elided="true" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: auto; width: auto; justify-content: space-around;">
+                        <ui:Label tabindex="-1" text="Melee" display-tooltip-when-elided="true" name="Move" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                        <ui:Label tabindex="-1" text="Q" display-tooltip-when-elided="true" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: auto; width: auto; justify-content: space-around;">
+                        <ui:Label tabindex="-1" text="Change Weapon" display-tooltip-when-elided="true" name="Move" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                        <ui:Label tabindex="-1" text="1 / 2 / Mouse Wheel" display-tooltip-when-elided="true" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="BottomButtons" style="flex-grow: initial; background-color: rgba(0, 0, 0, 0); flex-direction: row; max-height: none; align-self: auto; align-items: center; min-width: auto; min-height: auto; justify-content: space-around; flex-shrink: initial; margin-top: 8px;">
+                    <ui:Button text="Restart" display-tooltip-when-elided="true" name="RestartButton" style="-unity-text-align: middle-center; justify-content: space-around; align-self: auto; margin-left: 8px; margin-right: 8px; font-size: 24px;" />
+                    <ui:Button text="Main Menu" display-tooltip-when-elided="true" name="MainMenuButton" style="align-self: auto; justify-content: space-around; margin-left: 8px; margin-right: 8px; font-size: 24px;" />
+                    <ui:Button text="Quit" display-tooltip-when-elided="true" name="QuitButton" style="justify-content: space-around; align-items: stretch; margin-left: 8px; margin-right: 8px; font-size: 24px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

@@ -7,82 +7,65 @@ using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
-    [SerializeField] private GameObject help;
-    [SerializeField] private GameObject helpHint;
-    [SerializeField] private GameObject healthBarObject;
+    [SerializeField] private GameObject menuUI;
+    [Tooltip("These objects will be disabled when the game is paused.")]
+    [SerializeField] private GameObject[] hudUIElements;
 
-    [SerializeField] private float easyModePlayerHealth = 1000.0f;
-    [SerializeField] private float mediumModePlayerHealth = 300.0f;
-    [SerializeField] private float hardModePlayerHealth = 100.0f;
-    [SerializeField] private float realisticModePlayerHealth = 10.0f;
-
-    private HealthBar healthBar;
+    private bool[] lastHudUIElementsEnabled;
+    private float lastTimeScale = 1;
 
     private void Awake()
     {
-        healthBar = healthBarObject.GetComponent<HealthBar>();
-        
-        healthBar.health = healthBar.health / healthBar.initialHealth * easyModePlayerHealth;
-        healthBar.initialHealth = easyModePlayerHealth;
-        
-        Debug.Log("Player health: " + healthBar.health + "/" + healthBar.initialHealth);
+        lastHudUIElementsEnabled = new bool[hudUIElements.Length];
+
+        for (int i = 0; i < hudUIElements.Length; i++)
+        {
+            lastHudUIElementsEnabled[i] = hudUIElements[i].activeSelf;
+        }
+
+        _resumeGame();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Input.GetButtonDown("Restart"))
+        if (Input.GetButtonDown("ToggleMenu"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (menuUI.activeSelf)
+            {
+                _resumeGame();
+            }
+            else
+            {
+                _pauseGame();
+            }
         }
-        
-        if (Input.GetButtonDown("Quit"))
-        {
-            Application.Quit();
-        }
+    }
 
-        if (Input.GetButtonDown("Help"))
-        {
-            help.SetActive(true);
-            helpHint.SetActive(false);
-        }
+    private void _pauseGame()
+    {
+        menuUI.SetActive(true);
+        lastTimeScale = Time.timeScale;
+        Time.timeScale = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
 
-        if (Input.GetButtonDown("HelpExit"))
+        for (int i = 0; i < hudUIElements.Length; i++)
         {
-            help.SetActive(false);
-            helpHint.SetActive(true);
+            lastHudUIElementsEnabled[i] = hudUIElements[i].activeSelf;
+            hudUIElements[i].SetActive(false);
         }
+    }
 
-        if (Input.GetButtonDown("EasyMode"))
+    private void _resumeGame()
+    {
+        menuUI.SetActive(false);
+        Time.timeScale = lastTimeScale;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+        for (int i = 0; i < hudUIElements.Length; i++)
         {
-            healthBar.health = healthBar.health / healthBar.initialHealth * easyModePlayerHealth;
-            healthBar.initialHealth = easyModePlayerHealth;
-            
-            Debug.Log("Player health: " + healthBar.health + "/" + healthBar.initialHealth);
-        }
-        
-        if (Input.GetButtonDown("MediumMode"))
-        {
-            healthBar.health = healthBar.health / healthBar.initialHealth * mediumModePlayerHealth;
-            healthBar.initialHealth = mediumModePlayerHealth;
-            
-            Debug.Log("Player health: " + healthBar.health + "/" + healthBar.initialHealth);
-        }
-        
-        if (Input.GetButtonDown("HardMode"))
-        {
-            healthBar.health = healthBar.health / healthBar.initialHealth * hardModePlayerHealth;
-            healthBar.initialHealth = hardModePlayerHealth;
-            
-            Debug.Log("Player health: " + healthBar.health + "/" + healthBar.initialHealth);
-        }
-        
-        if (Input.GetButtonDown("RealisticMode"))
-        {
-            healthBar.health = healthBar.health / healthBar.initialHealth * realisticModePlayerHealth;
-            healthBar.initialHealth = realisticModePlayerHealth;
-            
-            Debug.Log("Player health: " + healthBar.health + "/" + healthBar.initialHealth);
+            hudUIElements[i].SetActive(lastHudUIElementsEnabled[i]);
         }
     }
 }

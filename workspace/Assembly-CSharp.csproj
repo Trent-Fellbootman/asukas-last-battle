@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\EvaVictoryLogic.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\UI\GameMenu.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\MouseLookScript.cs" />
      <Compile Include="Assets\Scripts\Manager.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
@@ -58,6 +59,8 @@
      <Compile Include="Assets\Scripts\PlayerGetInfected.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\GunShoot.cs" />
      <Compile Include="Assets\Scripts\SpawnZombie.cs" />
+     <Compile Include="Assets\Scripts\UI\ExitButton.cs" />
+     <Compile Include="Assets\Scripts\UI\LevelSelector.cs" />
      <Compile Include="Assets\Scripts\TakeDamage Interface.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\GunInventory.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\BulletScript.cs" />
@@ -68,7 +71,9 @@
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\TerrainDemoScene_HDRP\Scripts\SceneAnnotation.cs" />
      <Compile Include="Assets\Scripts\PlayerTakeDamage.cs" />
+     <Compile Include="Assets\Scripts\UI\DifficultyLevelSelector.cs" />
      <Compile Include="Assets\Scripts\ZombieTakeDamage.cs" />
+     <Compile Include="Assets\Scripts\UI\QualitySelector.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\Easy FPS\Scripts\DestroyAfterTimeParticle.cs" />
@@ -112,6 +117,7 @@
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Skybox\Models" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Materials" />
      <Folder Include="Assets\Easy FPS\Resources" />
+     <None Include="Assets\UI\GameMenu.uxml" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Settings\DiffusionProfiles" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Details\Textures" />
@@ -153,10 +159,12 @@
      <Folder Include="Assets\Easy FPS" />
      <Folder Include="Assets\JapaneseSchool\Meshes\Combined" />
      <Folder Include="Assets\Old Sea Port\scenes\Dock Thing" />
+     <Folder Include="Assets\Scripts\UI" />
      <Folder Include="Packages\com.unity.render-pipelines.high-definition-config\Tests" />
      <Folder Include="Packages\com.unity.render-pipelines.high-definition-config" />
      <Folder Include="Assets\Generators\MonotonicTextureGenerator" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Conifer\Textures" />
+     <Folder Include="Assets\UI Toolkit" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Lighting" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\VFXGraphs" />
@@ -169,6 +177,7 @@
      <Folder Include="Assets\TerrainDemoScene_HDRP\LensFlares\LensFlarePresets" />
      <Folder Include="Assets\TextMesh Pro" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Brushes" />
+     <Folder Include="Assets\UI Toolkit\UnityThemes" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Skybox" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Notes" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Bookmarks" />
@@ -204,6 +213,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <Folder Include="Assets\Easy FPS\Sounds" />
      <Folder Include="Assets\Old Sea Port\Shaders" />
+     <None Include="Assets\UI\GameMenu.uss" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Textures\Rock_Overgrown_B" />
      <Folder Include="Assets\Easy FPS\MuzzelFlash" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -228,6 +238,7 @@
      <Folder Include="Assets\Old Sea Port\mesh\Materials" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_D" />
      <Folder Include="Assets\TerrainDemoScene_HDRP" />
+     <Folder Include="Assets\UI" />
      <None Include="Assets\TerrainDemoScene_HDRP\Scripts\Resources\SceneAnnotationUI.uss" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Volumes\Shots" />
      <Folder Include="Assets\Easy FPS\Images\Materials" />
@@ -332,6 +343,7 @@
      <Folder Include="Assets\Prefabs\Enemies" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\UI\Sprites" />
      <Folder Include="Assets\Old Sea Port\EffectExamples\Profiles" />
+     <Folder Include="Assets\Settings" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Settings\Noise" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Skybox\Materials" />

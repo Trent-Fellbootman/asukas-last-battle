@@ -25,7 +25,7 @@ public class PlayerDrownBehavior : MonoBehaviour
         if (other.gameObject.CompareTag("Ocean"))
         {
             drownUI.SetActive(true);
-            Destroy(gameObject);
+            Time.timeScale = 0;
         }
     }
 }
