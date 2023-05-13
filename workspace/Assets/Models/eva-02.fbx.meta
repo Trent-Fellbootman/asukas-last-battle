@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Gun_Material
+    second: {fileID: 2100000, guid: 8f5c42afab7b135488b8d6815747503e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Gun_Material.001
     second: {fileID: 2100000, guid: 8f5c42afab7b135488b8d6815747503e, type: 2}
   - first:
@@ -29,6 +34,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Red
     second: {fileID: -382652638819485698, guid: ed595319b2f9fca42a50faba1f3bac6f, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sword_Material
+    second: {fileID: 2100000, guid: fab18c70ffa50cc43bb35e8ed62aba45, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

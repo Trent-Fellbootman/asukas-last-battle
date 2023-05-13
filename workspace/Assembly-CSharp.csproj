@@ -77,6 +77,7 @@
      <Folder Include="Assets" />
      <Folder Include="Assets\JapaneseSchool\Textures\Concrete_B" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Volumes" />
+     <Folder Include="Assets\XR\Settings" />
      <None Include="Assets\TerrainDemoScene_HDRP\Notes\Stamps.txt" />
      <None Include="Assets\TerrainDemoScene_HDRP\ThirdPartyNotices.txt" />
      <Folder Include="Assets\Simple Water Shader HDRP\Scripts" />
@@ -249,6 +250,7 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_C\Materials" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Textures\Cliff_Mossy_B" />
+     <Folder Include="Assets\Textures" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain\Textures\Cliff_Mossy_E" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\LocalFog" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Trees\Pines\Pine_D\Textures" />
@@ -262,6 +264,7 @@
      <Folder Include="Assets\JapaneseSchool\Prefabs\Reflection Probes" />
      <Folder Include="Assets\Easy FPS\Model_Animations_Textures\ironSight_addon\Materials" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\VFXGraphs\Art\Desert" />
+     <Folder Include="Assets\XR" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Terrain" />
      <Folder Include="Assets\Simple Water Shader HDRP\Prefabs" />
      <Folder Include="Assets\Old Sea Port\Water" />
@@ -308,6 +311,7 @@
      <None Include="Assets\TerrainDemoScene_HDRP\Notes\SpeedTrees.txt" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Old Sea Port\textures" />
+     <Folder Include="Assets\XR\Loaders" />
      <Folder Include="Assets\TextMesh Pro\Documentation" />
      <Folder Include="Assets\Simple Water Shader HDRP\DemoScene" />
      <Folder Include="Assets\Easy FPS\Resources\Weap_Icons" />
@@ -978,6 +982,9 @@
      <Reference Include="System.Xml.Serialization">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.2.2f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.XR.Management">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualEffectGraph.Runtime">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
      </Reference>
@@ -1026,17 +1033,23 @@
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.XR.Management.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.TextMeshPro">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Analytics">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+     <Reference Include="Unity.XR.Oculus.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.HighDefinition.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.RenderPipelines.HighDefinition.Editor.dll</HintPath>
@@ -1050,11 +1063,14 @@
      <Reference Include="Unity.TerrainTools.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.TerrainTools.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.PlasticSCM.Editor">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -1068,6 +1084,9 @@
      <Reference Include="Unity.ShaderGraph.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="UnityEditor.SpatialTracking">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
@@ -1077,11 +1096,17 @@
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
+     <Reference Include="UnityEngine.SpatialTracking">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
@@ -1091,6 +1116,9 @@
      </Reference>
      <Reference Include="Unity.InputSystem">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.XR.Oculus">
+     <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>C:\college-files-sp23\game-ai\homework\hw2\workspace\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>

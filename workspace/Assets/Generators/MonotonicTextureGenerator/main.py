@@ -3,8 +3,8 @@ import einops
 from PIL import Image
 
 SIZE  = 256
-RATIO = 0.5
-COLOR = [255, 128, 128, 64]
+RATIO = 1
+COLOR = [128, 0, 0, 255]
 
 radius = SIZE / 2 * RATIO
 

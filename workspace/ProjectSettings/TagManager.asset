@@ -13,6 +13,7 @@ TagManager:
   - Enemy
   - EscapeSite
   - Ocean
+  - LevelPart
   layers:
   - Default
   - TransparentFX
