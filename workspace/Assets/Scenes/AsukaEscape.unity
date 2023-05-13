@@ -2337,8 +2337,12 @@ MonoBehaviour:
   - 100
   defaultDifficultyLevelIndex: 0
   defaultFPSVisibility: 0
+  defaultHudVisibility: 1
   healthBarObject: {fileID: 161865664}
   player: {fileID: 1816857073}
+  hudGameObjects:
+  - {fileID: 397892000}
+  - {fileID: 685570609}
 --- !u!114 &187951206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33885,6 +33889,10 @@ PrefabInstance:
       propertyPath: healthBarObject
       value: 
       objectReference: {fileID: 161865664}
+    - target: {fileID: 7118232051381286253, guid: 25197ec3cf3a6fd4dbb4d0b0f6053b19, type: 3}
+      propertyPath: showFps
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7118232051388105169, guid: 25197ec3cf3a6fd4dbb4d0b0f6053b19, type: 3}
       propertyPath: m_RootOrder
       value: 2

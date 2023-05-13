@@ -73,6 +73,7 @@
      <Compile Include="Assets\Scripts\PlayerTakeDamage.cs" />
      <Compile Include="Assets\Scripts\UI\DifficultyLevelSelector.cs" />
      <Compile Include="Assets\Scripts\ZombieTakeDamage.cs" />
+     <Compile Include="Assets\Scripts\GlobalSettings.cs" />
      <Compile Include="Assets\Scripts\UI\QualitySelector.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\Old Sea Port\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
@@ -117,6 +118,7 @@
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Skybox\Models" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Materials" />
      <Folder Include="Assets\Easy FPS\Resources" />
+     <None Include="Assets\UI\GameMenuStyleSheet.uss" />
      <None Include="Assets\UI\GameMenu.uxml" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Settings\DiffusionProfiles" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -213,7 +215,6 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <Folder Include="Assets\Easy FPS\Sounds" />
      <Folder Include="Assets\Old Sea Port\Shaders" />
-     <None Include="Assets\UI\GameMenu.uss" />
      <Folder Include="Assets\TerrainDemoScene_HDRP\Prefabs\Rocks\Textures\Rock_Overgrown_B" />
      <Folder Include="Assets\Easy FPS\MuzzelFlash" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
