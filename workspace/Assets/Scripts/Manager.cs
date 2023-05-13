@@ -11,11 +11,17 @@ public class Manager : MonoBehaviour
     [Tooltip("These objects will be disabled when the game is paused.")]
     [SerializeField] private GameObject[] hudUIElements;
 
+    [SerializeField] private GameObject musicPlayerObject;
+
+    private AudioSource musicPlayer;
+    
     private bool[] lastHudUIElementsEnabled;
     private float lastTimeScale = 1;
 
     private void Awake()
     {
+        musicPlayer = musicPlayerObject.GetComponent<AudioSource>();
+        
         lastHudUIElementsEnabled = new bool[hudUIElements.Length];
 
         for (int i = 0; i < hudUIElements.Length; i++)
@@ -48,6 +54,7 @@ public class Manager : MonoBehaviour
         Time.timeScale = 0;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        musicPlayer.Pause();
 
         for (int i = 0; i < hudUIElements.Length; i++)
         {
@@ -59,6 +66,8 @@ public class Manager : MonoBehaviour
     private void _resumeGame()
     {
         menuUI.SetActive(false);
+        musicPlayer.UnPause();
+        
         Time.timeScale = lastTimeScale;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;

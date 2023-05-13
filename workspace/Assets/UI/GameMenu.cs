@@ -3,12 +3,13 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 public class GameMenu : MonoBehaviour
 {
-    [SerializeField] private string[] videoQualityPresetNames;
-    [SerializeField] private RenderPipelineAsset[] renderPipelineAssets;
+    [SerializeField] private string[] videoQualityPresetLabels;
+    [SerializeField] private string[] qualityLevelPresetNames;
     [SerializeField] private int defaultVideoQualityPresetIndex = 0;
 
     [SerializeField] private string[] difficultyLevelNames;
@@ -61,16 +62,16 @@ public class GameMenu : MonoBehaviour
         var uiDocument = GetComponent<UIDocument>();
 
         videoQualitySelector = uiDocument.rootVisualElement.Q<DropdownField>("VideoQualitySelector");
-        videoQualitySelector.choices = videoQualityPresetNames.ToList();
+        videoQualitySelector.choices = videoQualityPresetLabels.ToList();
         videoQualitySelector.RegisterValueChangedCallback(evt => _selectVideoQuality(evt.newValue));
         if (!currentVideoQualityPresetIndex.HasValue)
         {
             currentVideoQualityPresetIndex = defaultVideoQualityPresetIndex;
-            videoQualitySelector.value = videoQualityPresetNames[defaultVideoQualityPresetIndex];
+            videoQualitySelector.value = videoQualityPresetLabels[defaultVideoQualityPresetIndex];
         }
         else
         {
-            videoQualitySelector.SetValueWithoutNotify(videoQualityPresetNames[currentVideoQualityPresetIndex.Value]);
+            videoQualitySelector.SetValueWithoutNotify(videoQualityPresetLabels[currentVideoQualityPresetIndex.Value]);
         }
 
         difficultyLevelSelector = uiDocument.rootVisualElement.Q<DropdownField>("DifficultyLevelSelector");
@@ -98,7 +99,7 @@ public class GameMenu : MonoBehaviour
         {
             fpsToggle.SetValueWithoutNotify(currentFPSVisibility.Value);
         }
-        
+
         hudToggle = uiDocument.rootVisualElement.Q<Toggle>("HUDToggle");
         hudToggle.RegisterValueChangedCallback(evt => _toggleHUDVisibility(evt.newValue));
         if (!currentHudVisibility.HasValue)
@@ -123,12 +124,14 @@ public class GameMenu : MonoBehaviour
 
     private void _selectVideoQuality(string choice)
     {
-        int index = videoQualityPresetNames.ToList().IndexOf(choice);
+        int index = videoQualityPresetLabels.ToList().IndexOf(choice);
         currentVideoQualityPresetIndex = index;
+        
+        string qualityPresetName = qualityLevelPresetNames[index];
 
-        QualitySettings.renderPipeline = renderPipelineAssets[index];
+        QualitySettings.SetQualityLevel(QualitySettings.names.ToList().IndexOf(qualityPresetName), true);
 
-        Debug.Log("Video quality: " + videoQualityPresetNames[index]);
+        Debug.Log("Selecting quality preset: " + qualityPresetName);
     }
 
     private void _selectDifficulty(string choice)
@@ -162,7 +165,7 @@ public class GameMenu : MonoBehaviour
         currentFPSVisibility = visible;
         mouseLookScript.showFps = visible;
     }
-    
+
     private void _toggleHUDVisibility(bool visible)
     {
         currentHudVisibility = visible;
@@ -179,7 +182,7 @@ public class GameMenu : MonoBehaviour
     private void _hideHud()
     {
         gunInventory.ToggleHudVisibility(false);
-        
+
         for (int i = 0; i < hudGameObjects.Length; i++)
         {
             lastHudGameObjectLocalScales[i] = hudGameObjects[i].transform.localScale;
@@ -190,11 +193,11 @@ public class GameMenu : MonoBehaviour
             obj.transform.localScale = Vector3.zero;
         }
     }
-    
+
     private void _showHud()
     {
         gunInventory.ToggleHudVisibility(true);
-        
+
         for (int i = 0; i < hudGameObjects.Length; i++)
         {
             hudGameObjects[i].transform.localScale = lastHudGameObjectLocalScales[i];
