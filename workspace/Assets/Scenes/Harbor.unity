@@ -3808,8 +3808,8 @@ MonoBehaviour:
   m_text: 'You are killed by mass produced EVAs
 
 
-    You can choose to restart the
-    game or quit to main menu.'
+    Press Esc to restart the game
+    or quit to main menu.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26141,7 +26141,7 @@ MonoBehaviour:
   m_text: 'You drowned
 
 
-    You can choose to restart the game or quit to main menu.'
+    Press Esc to restart the game or quit to main menu.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -31928,7 +31928,7 @@ MonoBehaviour:
   m_text: 'You defeated all mass produced Evangelions!
 
 
-    You can choose to restart
+    Press Esc to restart
     the game or quit to main menu.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

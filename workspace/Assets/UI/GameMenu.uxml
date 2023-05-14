@@ -50,6 +50,14 @@
                         <ui:Label tabindex="-1" text="Change Weapon" display-tooltip-when-elided="true" name="Move" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
                         <ui:Label tabindex="-1" text="1 / 2 / Mouse Wheel" display-tooltip-when-elided="true" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
                     </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: auto; width: auto; justify-content: space-around;">
+                        <ui:Label tabindex="-1" text="Reload" display-tooltip-when-elided="true" name="Move" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                        <ui:Label tabindex="-1" text="R" display-tooltip-when-elided="true" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: auto; width: auto; justify-content: space-around;">
+                        <ui:Label tabindex="-1" text="Show / Hide Menu" display-tooltip-when-elided="true" name="Move" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                        <ui:Label tabindex="-1" text="Esc" display-tooltip-when-elided="true" style="width: 100px; -unity-text-align: upper-center; align-self: stretch;" />
+                    </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="BottomButtons" style="flex-grow: initial; background-color: rgba(0, 0, 0, 0); flex-direction: row; max-height: none; align-self: auto; align-items: center; min-width: auto; min-height: auto; justify-content: space-around; flex-shrink: initial; margin-top: 8px;">
                     <ui:Button text="Restart" display-tooltip-when-elided="true" name="RestartButton" style="-unity-text-align: middle-center; justify-content: space-around; align-self: auto; margin-left: 8px; margin-right: 8px; font-size: 24px;" />
