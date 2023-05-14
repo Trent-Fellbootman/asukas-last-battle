@@ -2372,16 +2372,18 @@ MonoBehaviour:
   - Ultra
   defaultVideoQualityPresetIndex: 0
   difficultyLevelNames:
+  - Invulnerable
   - Easy
   - Normal
   - Hard
   - Realistic
   playerHealthLevels:
+  - 1e+10
   - 2000
   - 1000
   - 500
   - 100
-  defaultDifficultyLevelIndex: 0
+  defaultDifficultyLevelIndex: 1
   defaultFPSVisibility: 0
   defaultHudVisibility: 1
   healthBarObject: {fileID: 161865664}
