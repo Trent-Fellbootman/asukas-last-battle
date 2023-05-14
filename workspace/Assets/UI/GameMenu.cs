@@ -120,13 +120,26 @@ public class GameMenu : MonoBehaviour
         restartButton.clicked += _restartGame;
         mainMenuButton.clicked += _quitToMainMenu;
         quitButton.clicked += _quitGame;
+
+        // custom scroll behavior
+        var scrollView = uiDocument.rootVisualElement.Q<ScrollView>("ScrollView");
+
+        verticalScroller = scrollView.Q("unity-content-and-vertical-scroll-container").Q<Scroller>();
+
+        scrollView.RegisterCallback<WheelEvent>(@event =>
+        {
+            scrollVelocity += @event.delta.y * 100;
+            
+            // Stop the event here so the builtin scroll functionality of the list doesn't activate
+            @event.StopPropagation();
+        });
     }
 
     private void _selectVideoQuality(string choice)
     {
         int index = videoQualityPresetLabels.ToList().IndexOf(choice);
         currentVideoQualityPresetIndex = index;
-        
+
         string qualityPresetName = qualityLevelPresetNames[index];
 
         QualitySettings.SetQualityLevel(QualitySettings.names.ToList().IndexOf(qualityPresetName), true);
@@ -201,6 +214,19 @@ public class GameMenu : MonoBehaviour
         for (int i = 0; i < hudGameObjects.Length; i++)
         {
             hudGameObjects[i].transform.localScale = lastHudGameObjectLocalScales[i];
+        }
+    }
+
+    private float scrollVelocity = 0;
+    private readonly float scrollDamping = 0.1f;
+    private Scroller verticalScroller;
+
+    private void Update()
+    {
+        if (verticalScroller != null)
+        {
+            verticalScroller.value += scrollVelocity;
+            scrollVelocity -= scrollVelocity * scrollDamping;
         }
     }
 }
