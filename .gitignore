@@ -17,3 +17,4 @@ workspace/obj
 *.log
 *.synctex.gz
 *.xdv
+*.out
