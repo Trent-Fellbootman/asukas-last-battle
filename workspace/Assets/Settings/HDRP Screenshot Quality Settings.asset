@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: HDRP Screenshot Quality Settings
   m_EditorClassIdentifier: 
   m_RenderPipelineSettings:
-    supportShadowMask: 0
+    supportShadowMask: 1
     supportSSR: 1
     supportSSRTransparent: 1
     supportSSAO: 1
-    supportSSGI: 0
+    supportSSGI: 1
     supportSubsurfaceScattering: 1
     sssSampleBudget:
       m_Values: 140000002800000050000000
@@ -59,8 +59,8 @@ MonoBehaviour:
     probeVolumeBlendingMemoryBudget: 128
     supportProbeVolumeStreaming: 0
     probeVolumeSHBands: 1
-    supportRayTracing: 1
-    supportedRayTracingMode: 3
+    supportRayTracing: 0
+    supportedRayTracingMode: 1
     lightLoopSettings:
       cookieAtlasSize: 256
       cookieFormat: 74

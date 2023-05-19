@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HDRP Ultra Quality Settings
   m_EditorClassIdentifier: 
   m_RenderPipelineSettings:
-    supportShadowMask: 0
+    supportShadowMask: 1
     supportSSR: 1
     supportSSRTransparent: 1
     supportSSAO: 1
@@ -59,8 +59,8 @@ MonoBehaviour:
     probeVolumeBlendingMemoryBudget: 128
     supportProbeVolumeStreaming: 0
     probeVolumeSHBands: 1
-    supportRayTracing: 1
-    supportedRayTracingMode: 3
+    supportRayTracing: 0
+    supportedRayTracingMode: 1
     lightLoopSettings:
       cookieAtlasSize: 1024
       cookieFormat: 74

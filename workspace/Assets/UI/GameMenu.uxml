@@ -11,6 +11,7 @@
                     <ui:Label tabindex="-1" text="Settings" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; font-size: 32px;" />
                     <ui:VisualElement style="flex-grow: initial; background-color: rgba(0, 0, 0, 0); flex-direction: column; flex-shrink: initial; max-width: none; max-height: none; align-self: center;">
                         <ui:DropdownField label="Video Quality" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="VideoQualitySelector" style="min-width: 300px; flex-shrink: initial; flex-grow: initial; flex-direction: row; font-size: 24px; -unity-text-align: upper-center; margin-top: 4px; margin-bottom: 8px; justify-content: flex-start; align-items: stretch; max-height: none;" />
+                        <ui:Toggle label="Full Screen" name="FullScreenToggle" />
                         <ui:DropdownField label="Difficulty" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="DifficultyLevelSelector" style="min-width: 300px; flex-shrink: initial; flex-grow: initial; justify-content: flex-start; font-size: 24px; -unity-text-align: upper-center; margin-top: 4px; margin-bottom: 8px; flex-direction: row; max-height: none;" />
                         <ui:Toggle label="Show FPS" name="FPSToggle" style="align-self: stretch; -unity-text-align: upper-center;" />
                         <ui:Toggle label="Show HUD" name="HUDToggle" style="align-self: stretch; -unity-text-align: upper-center;" />
