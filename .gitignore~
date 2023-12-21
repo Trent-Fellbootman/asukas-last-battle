@@ -1,0 +1,22 @@
+Logs/
+Library/
+Packages/
+Temp/
+Build/
+workspace/Assets/Easy FPS/
+workspace/Assets/Old Sea Port/
+workspace/Assets/TextMesh Pro/
+workspace/obj
+.vs/
+*.cache
+
+*.pdf
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.xdv
+*.out
+
+*/Lightmap*

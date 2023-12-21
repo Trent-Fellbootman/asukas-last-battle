@@ -18,3 +18,5 @@ workspace/obj
 *.synctex.gz
 *.xdv
 *.out
+
+**/Lightmap*

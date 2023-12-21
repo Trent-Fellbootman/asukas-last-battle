@@ -2386,7 +2386,6 @@ MonoBehaviour:
   defaultDifficultyLevelIndex: 1
   defaultFPSVisibility: 0
   defaultHudVisibility: 1
-  defaultFullScreenEnabled: 1
   healthBarObject: {fileID: 161865664}
   player: {fileID: 1816857073}
   hudGameObjects:
@@ -24859,7 +24858,7 @@ MonoBehaviour:
   m_SurfaceTexture: {fileID: 0}
   m_SurfaceTint: {r: 1, g: 1, b: 1, a: 1}
   m_Distance: 1.5e+11
-  m_UseRayTracedShadows: 0
+  m_UseRayTracedShadows: 1
   m_NumRayTracingSamples: 4
   m_FilterTracedShadow: 1
   m_FilterSizeTraced: 16
@@ -24892,7 +24891,7 @@ MonoBehaviour:
     m_Override: 1
     m_UseOverride: 1
     m_Level: 0
-  m_RayTracedContactShadow: 0
+  m_RayTracedContactShadow: 1
   m_ShadowTint: {r: 0, g: 0, b: 0, a: 1}
   m_PenumbraTint: 0
   m_NormalBias: 0.75
@@ -32180,7 +32179,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5bd9ea71c8474ab4eacc84753f09d3cb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fdce86851cb9d334d9da37895671f542, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

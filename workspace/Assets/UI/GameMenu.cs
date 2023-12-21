@@ -19,7 +19,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] private bool defaultFPSVisibility = false;
     [SerializeField] private bool defaultHudVisibility = true;
     // [SerializeField] private bool defaultPathTracingEnabled = false;
-    [SerializeField] private bool defaultFullScreenEnabled = true;
+    // [SerializeField] private bool defaultFullScreenEnabled = true;
 
     [SerializeField] private GameObject healthBarObject;
     [SerializeField] private GameObject player;
@@ -38,7 +38,7 @@ public class GameMenu : MonoBehaviour
     private Toggle fpsToggle;
     private Toggle hudToggle;
     // private Toggle pathTracingToggle;
-    private Toggle fullScreenToggle;
+    // private Toggle fullScreenToggle;
 
     private Button restartButton;
     private Button mainMenuButton;
@@ -53,7 +53,7 @@ public class GameMenu : MonoBehaviour
     private bool? currentFPSVisibility = null;
     private bool? currentHudVisibility = null;
     // private bool? pathTracingEnabled = null;
-    private bool? fullScreenEnabled = null;
+    // private bool? fullScreenEnabled = null;
     private Vector3[] lastHudGameObjectLocalScales;
 
     private void Awake()
@@ -127,18 +127,18 @@ public class GameMenu : MonoBehaviour
             hudToggle.SetValueWithoutNotify(currentHudVisibility.Value);
         }
 
-        fullScreenToggle = uiDocument.rootVisualElement.Q<Toggle>("FullScreenToggle");
-        fullScreenToggle.RegisterValueChangedCallback(evt => _toggleFullScreen(evt.newValue));
-        if (!fullScreenEnabled.HasValue)
-        {
-            fullScreenEnabled = defaultFullScreenEnabled;
-            fullScreenToggle.value = fullScreenEnabled.Value;
-            _toggleFullScreen(fullScreenToggle.value);
-        }
-        else
-        {
-            fullScreenToggle.SetValueWithoutNotify(fullScreenEnabled.Value);
-        }
+        // fullScreenToggle = uiDocument.rootVisualElement.Q<Toggle>("FullScreenToggle");
+        // fullScreenToggle.RegisterValueChangedCallback(evt => _toggleFullScreen(evt.newValue));
+        // if (!fullScreenEnabled.HasValue)
+        // {
+        //     fullScreenEnabled = defaultFullScreenEnabled;
+        //     fullScreenToggle.value = fullScreenEnabled.Value;
+        //     _toggleFullScreen(fullScreenToggle.value);
+        // }
+        // else
+        // {
+        //     fullScreenToggle.SetValueWithoutNotify(fullScreenEnabled.Value);
+        // }
 
         // pathTracingToggle = uiDocument.rootVisualElement.Q<Toggle>("PathTracingToggle");
         // pathTracingToggle.RegisterValueChangedCallback(evt => _togglePathTracing(evt.newValue));
@@ -185,19 +185,21 @@ public class GameMenu : MonoBehaviour
         Debug.Log("Selecting quality preset: " + qualityPresetName);
     }
 
-    private void _toggleFullScreen(bool newEnabled)
-    {
-        Screen.fullScreen = newEnabled;
-        
-        if (newEnabled)
-        {
-            Debug.Log("Fullscreen enabled");
-        }
-        else
-        {
-            Debug.Log("Fullscreen disabled");
-        }
-    }
+    // private void _toggleFullScreen(bool newEnabled)
+    // {
+    //     fullScreenEnabled = newEnabled;
+    //     
+    //     Screen.fullScreen = newEnabled;
+    //     
+    //     if (newEnabled)
+    //     {
+    //         Debug.Log("Fullscreen enabled");
+    //     }
+    //     else
+    //     {
+    //         Debug.Log("Fullscreen disabled");
+    //     }
+    // }
 
     private void _selectDifficulty(string choice)
     {
